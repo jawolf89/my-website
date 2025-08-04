@@ -1,13 +1,41 @@
+body {
+    background: url("Pictures/repeated-bullets.jpg");
+}
+
 h1 {
-    color:rgb(17, 17, 174);
+    color: #444242ba;
+    text-align: center;
+    background:linear-gradient(45deg, #999999 5%, #ffffff 10%, #ccc 30%, #dddddd 50%, #cccccc 70%, #ffffff 80%, #999999 95%);
+    padding: 1em 1em;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+img{
+    float: left;
+    margin-right: 2em;
+    border-style: solid;
+    border-radius: 10px;
+    color: #444242ba;
 }
 
 #favorite {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-left: 5em;
+    color:#444242ba;
+    background:linear-gradient(45deg, #999999 5%, #ffffff 10%, #ccc 30%, #dddddd 50%, #cccccc 70%, #ffffff 80%, #999999 95%);
+    padding: 1em 1em;
+    border-style: solid;
+    border-radius: 10px;
+    margin-left: 26%;
 }
 
-footer>p {
-    float:right
+main{
+    color:#444242ba;
+    background:linear-gradient(45deg, #999999 5%, #ffffff 10%, #ccc 30%, #dddddd 50%, #cccccc 70%, #ffffff 80%, #999999 95%);
+    border-style: solid;
+    border-radius: 10px;
+    margin-left: 26%;
 }
 
 p, li {
@@ -15,5 +43,10 @@ p, li {
 }
 
 a:active {
-    color: rgb(37, 155, 7);
+    color: #259b07;
+}
+
+footer>p {
+    float:right;
+    margin-top: 20%;
 }
