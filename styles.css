@@ -10,6 +10,21 @@ h1 {
     border-style: solid;
     border-radius: 10px;
 }
+/* Added Navigation Menu*/
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    width: 100%;
+    border: 2px solid #444242ba;
+    background:linear-gradient(45deg, #999999 5%, #ffffff 10%, #ccc 30%, #dddddd 50%, #cccccc 70%, #ffffff 80%, #999999 95%);
+}
+
+nav ul li a {
+    display: block;
+    padding: .5em 0 .5em 1.5em;
+}
 
 img{
     float: left;
@@ -49,4 +64,19 @@ a:active {
 footer>p {
     float:right;
     margin-top: 20%;
+}
+
+/*Media query to take all elements after img and drop them underneath the image*/
+@media only screen and (max-width:750px){
+    img {
+        float: none;
+        width: 100%;
+    }
+    #favorite{
+        margin: 0;
+    }
+    
+    main {
+        margin: 0;
+    }
 }
