@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="styles.css">
     <title>Gungrave</title>
 </head>
+
 <body>
     <header>
         <h1>Gungrave</h1>
@@ -16,24 +18,26 @@
                 <li><a href="html/video_games.html">Video Games</a></li>
             </ul>
         </nav>
-        <img src="Pictures/Gungrave_chained.jpg" width="25%" alt="Brandon Heat with Gungrave logo displayed">
-        <h2 id="favorite">My Favorite Anime Series</h2>
     </header>
-    <main>
-        <!--Blurb to describe intent with website. Needs to flow better with list below-->
-        <p>Gungrave is my favorite anime series of all time, but it isn't very well known. So, I would love to share
-            some of what this anime is about and why I love it.</p>
-        <ul>
+    <main id="index_main">
+        <!--moved img and h2 elements into main-->
+        <img src="Pictures/Gungrave_chained.jpg" width="25%" alt="Brandon Heat with Gungrave logo displayed"
+            id="home_img">
+        <h2 id="favorite">My Favorite Anime Series</h2>
+        <p id="home_p">Gungrave is my favorite anime series of all time, but it isn't very well known. So, I would love
+            to share
+            some of what makes this series so awesome starting with a list of some of the people behind the creation of
+            this series as well as the video game franchise this series was based on.</p>
+        <ul id="home_ul">
             <!--Added pop up tab to external link-->
-            <li><a href="https://en.wikipedia.org/wiki/Yasuhiro_Nightow" target="_blank">Yasuhiro Nightow</a></li>
-            <li><a href="html/story.html">Story synopsis</a></li>
-            <li><a>Video game franchise</a></li>
-            <!--Copyright link inserted for same page place holder demonstration-->
-            <li><a href="#copyright">Copyright link</a></li>
+            <li class="people" ><a href="https://en.wikipedia.org/wiki/Yasuhiro_Nightow" target="_blank">Yasuhiro Nightow</a>- Designer for the characters in the anime and video game series</li>
+            <li class="people">Yōsuke Kuroda- Screen Writer for the anime series</li>
+            <li class="people"> Toshiyuki Tsuru- Anime series director</li>
         </ul>
     </main>
     <footer>
         <p id="copyright">&copy; Copyright Funimation 2025</p>
     </footer>
 </body>
+
 </html>

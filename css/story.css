@@ -1,9 +1,17 @@
-body p {
-    column-count: 3;
+/* Added flex display to main*/
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    font-size: 140%;
+    text-indent: 2em;
+    padding: 0 1em 0 1em;
 }
 
 /*Media queries to combine the columns together when they start to feel squished*/
-@media only screen and (max-width: 720px) {
+/*@media only screen and (max-width: 720px) {
     body p {
         column-count: 2;
     }
@@ -13,4 +21,4 @@ body p {
     body p {
         column-count: 1;
     }
-}
+}*/

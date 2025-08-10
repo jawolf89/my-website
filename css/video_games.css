@@ -1,0 +1,13 @@
+main {
+    list-style-type: none;
+    display:flex;
+    flex-direction: row;
+}
+
+li {
+    font-size: 140%;
+}
+
+img {
+    width: 50%;
+}

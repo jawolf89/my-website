@@ -10,15 +10,20 @@ h1 {
     border-style: solid;
     border-radius: 10px;
 }
-/* Added Navigation Menu*/
+/* Added flex container to Navigation Menu*/
 nav ul {
     list-style-type: none;
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: row;
+    padding: 0;
 }
 
 nav ul li {
     width: 100%;
     border: 2px solid #444242ba;
     background:linear-gradient(45deg, #999999 5%, #ffffff 10%, #ccc 30%, #dddddd 50%, #cccccc 70%, #ffffff 80%, #999999 95%);
+    font-size: 140%;
 }
 
 nav ul li a {
@@ -26,23 +31,41 @@ nav ul li a {
     padding: .5em 0 .5em 1.5em;
 }
 
-img{
-    float: left;
+img {
     margin-right: 2em;
     border-style: solid;
     border-radius: 10px;
     color: #444242ba;
 }
 
+#home_img {
+    grid-area: image;
+    width: 95%;
+}
+
 #favorite {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding-left: 5em;
+    /*padding-left: 5em;*/
     color:#444242ba;
     background:linear-gradient(45deg, #999999 5%, #ffffff 10%, #ccc 30%, #dddddd 50%, #cccccc 70%, #ffffff 80%, #999999 95%);
     padding: 1em 1em;
     border-style: solid;
     border-radius: 10px;
-    margin-left: 26%;
+   /* margin-left: 26%;*/
+    grid-area: h2;
+    font-size: 200%;
+}
+
+#home_p {
+    grid-area: p;
+    font-size: 170%;
+}
+#home_ul {
+    grid-area: ul;
+}
+
+.people {
+    font-size: 140%;
 }
 
 main{
@@ -50,33 +73,23 @@ main{
     background:linear-gradient(45deg, #999999 5%, #ffffff 10%, #ccc 30%, #dddddd 50%, #cccccc 70%, #ffffff 80%, #999999 95%);
     border-style: solid;
     border-radius: 10px;
-    margin-left: 26%;
 }
-
-p, li {
-    font-size: 120%;   
+/*Added grid template to main*/
+#index_main {
+    display: grid;
+    grid-template-areas: 
+    "image h2"
+    "image p"
+    "image ul";
 }
 
 a:active {
     color: #259b07;
 }
 
+/*Added padding to the right to keep from being cut off by scroll bar*/
 footer>p {
     float:right;
     margin-top: 20%;
-}
-
-/*Media query to take all elements after img and drop them underneath the image*/
-@media only screen and (max-width:750px){
-    img {
-        float: none;
-        width: 100%;
-    }
-    #favorite{
-        margin: 0;
-    }
-    
-    main {
-        margin: 0;
-    }
+    padding-right: 2%;
 }
