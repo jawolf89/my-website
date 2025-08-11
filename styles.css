@@ -93,3 +93,17 @@ footer>p {
     margin-top: 20%;
     padding-right: 2%;
 }
+
+@media only screen and (max-width: 565px){
+  #index_main {
+    grid-template-areas: 
+    "image image"
+    "h2 h2"
+    "p p"
+    ". ul";
+}
+#home_img {
+    width: 75%;
+}
+
+}

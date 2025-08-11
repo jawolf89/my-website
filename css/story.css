@@ -10,15 +10,3 @@ p {
     padding: 0 1em 0 1em;
 }
 
-/*Media queries to combine the columns together when they start to feel squished*/
-/*@media only screen and (max-width: 720px) {
-    body p {
-        column-count: 2;
-    }
-}
-
-@media only screen and (max-width: 470px){
-    body p {
-        column-count: 1;
-    }
-}*/
