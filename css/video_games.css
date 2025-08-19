@@ -5,17 +5,22 @@
     padding: 1em 0 1em 0;
 }
 
-img {
-    width: 25%;
-    align-self: flex-start;
-}
-
-p {
+figure{
     flex-basis: 50%;
-    font-size: 140%;
 }
 
-@media only screen and (max-width: 565px){
+sec p {
+    flex-basis: 50%;
+    font-size: 170%;
+}
+
+bold {
+    font-weight: bold;
+}
+
+/*Figure out the look of the sections when the screen is scrunched up*/
+
+@media only screen and (max-width: 885px){
     .sections {
         flex-direction: column;
     }
